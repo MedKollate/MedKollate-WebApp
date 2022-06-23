@@ -1,0 +1,322 @@
+/* This is where i initialize the variables to be used */
+:root {
+    --primary-color: 78, 214, 176;
+    --secondary-color: 26, 161, 229;
+
+    --gray: rgb(112, 112, 112);
+    --white: #FFFFFF;
+    --black: #000000;
+    --lightGreen: #4ed6b0;
+    --darkGreen: #276B58;
+    --blue: #1aa1e5;
+
+    --Poppins: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 400px;
+}
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 1.2rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    /* column-gap: 2.4rem; */
+    row-gap: 2rem;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.r-column {
+    flex-direction: column-reverse;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.6rem;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.nav-link.active{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+/* Contact Page */
+
+.slantedDiv {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(256.89deg, var(--lightGreen) 31.43%, var(--darkGreen) 100%);
+    background-blend-mode: multiply;
+}
+
+.slantedDiv::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform-origin: top right;
+    transform: skewY(-4deg);
+}
+
+.contact{
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    padding: 10px 50px;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 46px 8px rgba(39, 107, 88, 0.25);
+    border-radius: 30px;
+}
+
+.contact--link{
+    color: var(--white)
+}
+
+.contact--link.active{
+    border-color: var(--white);
+}
+
+.contact--link:hover{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--lightGreen);
+}
+
+.contact--main{
+    position: absolute;
+    top: 30px;
+    left: 5%;
+}
+
+.contact--details{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact--details form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    margin-top: 10px;
+}
+
+.contact--details > h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 28px;
+    color: #31856E;
+}
+
+.contact--details > p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #31856E;
+    word-spacing: -1px;
+    margin-top: 5px;
+}
+
+.contact--details label{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #202020;
+}
+
+.contact--details input, .contact--details textarea, .contact--details button{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #4ED5B0;
+    padding-left: 25px;
+    outline: none;
+}
+
+.contact--details textarea{
+    height: 130px;
+    padding-top: 15px;
+    resize: none;
+}
+
+.contact--details button{
+    text-align: center;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    transition: ease-in-out 1s;
+}
+
+.contact--details button:hover{
+    background: linear-gradient(256.89deg, var(--lightGreen) 31.43%, var(--darkGreen) 100%);
+    background-blend-mode: multiply;
+    filter: drop-shadow(1px);
+}
+
+
+footer{
+    /* height: 100px; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .top h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: rgba(72, 197, 162, 0.9);
+}
+
+footer .bottom ul{
+    display: flex;
+    list-style: none;
+}
+footer .bottom ul li{
+    margin-left: 10px;
+}
+
+footer .bottom span, footer .bottom a{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    color: #4BCFAA;
+    cursor: pointer;
+}
+
+footer .bottom span{
+    margin-left: 5px;
+}
+
+footer .bottom ul li img{
+    cursor: pointer;
+}
+
+footer .bottom a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HELPER/SETTINGS CLASSES */
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-right-md {
+    margin-right: 4.8rem !important;
+}
+
+.margin-left-sm {
+    margin-left: 1.6rem !important;
+}
+
+.margin-left-md {
+    margin-left: 4.8rem !important;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
