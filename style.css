@@ -108,7 +108,9 @@ img {
     border-radius: 6px;
 }
 
+/* -------------- */
 /* Contact Page */
+/* ------------ */
 
 .slantedDiv {
     position: relative;
@@ -133,7 +135,7 @@ img {
     transform: skewY(-4deg);
 }
 
-.contact{
+.contact--wrapper{
     max-width: 130rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -237,7 +239,103 @@ img {
     filter: drop-shadow(1px);
 }
 
+/* -------------- */
+/* About Page */
+/* ------------ */
 
+.about{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(170.18deg, rgba(251, 251, 251, 0.9604) 10.53%, rgba(255, 255, 255, 0.98) 52.45%, rgba(0, 191, 166, 0.9408) 93.92%);
+}
+
+.about--link{
+    color: var(--blue)
+}
+
+.about--link.active{
+    border-color: var(--blue);
+}
+
+.about--link:hover{
+    padding: 5px;
+    border-radius: 6px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.about--main{
+    position: absolute;
+    top: 30px;
+    left: 5%;
+}
+
+.about--wrapper{
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.about--image{
+    max-width: 450px;
+}
+
+.about--details{
+    /* max-width: 450px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about--details h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 28px;
+    color: #31856E;
+}
+
+.about--details .text{
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 4px;
+    gap: 10px;
+}
+
+.about--details .text p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.about--details button{
+    text-align: center;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    transition: ease-in-out 1s;
+    align-self: flex-end;
+}
+
+.about--details button:hover{
+    background: linear-gradient(168deg, var(--lightGreen) 31.43%, rgb(251, 251, 251, 0.9604));
+    background-blend-mode: multiply;
+    filter: drop-shadow(1px);
+}
+
+/* -------------- */
+/* Footer */
+/* ------------ */
 footer{
     /* height: 100px; */
     width: 100%;
@@ -280,7 +378,7 @@ footer .bottom span, footer .bottom a{
 }
 
 footer .bottom span{
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 footer .bottom ul li img{
