@@ -1,6 +1,10 @@
-.navbar {
+body{
   max-width: 100%;
-  margin: 0 auto;
+  margin:0 auto;
+}
+.navbar {
+  /* max-width: 100%;
+  margin: 0 auto; */
 }
 nav {
   display: flex;
@@ -13,20 +17,13 @@ nav {
     align-items:center;
     
 }
-/* .img{} */
-.logo-image div{
-    padding: 5px;
+.img{
+  width: 90%;
 }
-/* .medKollate{
-    color:#1AA1E5;
-    ;
-}
-.catalog{
-    color:#202020;
-} */
+
 .link {
   text-decoration: none;
-  padding: 40px;
+  padding: 30px;
   font-size: 30px;
   color: #1aa1e5;
 }
@@ -54,15 +51,15 @@ nav {
   padding: 0 7rem;
 }
 .seam {
-  max-width: 100%;
-  margin: 0 auto;
+  /* max-width: 100%;
+  margin: 0 auto; */
   font-size: 40px;
-  /* padding-left: 4rem; */
+  padding-left: 5rem;
 }
 .btn {
   max-width: 100%;
   margin: 0 auto;
-  padding: 9rem 0;
+  padding: 9rem 5rem;
 }
 .reglog {
   display: flex;
@@ -116,7 +113,7 @@ nav {
 }
 .group-image {
   position: absolute;
-  right: 5rem;
+  right: 3rem;
   top: -3rem;
 }
 .medkollate-image{
