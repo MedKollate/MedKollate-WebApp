@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Roboto&display=swap');
+
 /* This is where i initialize the variables to be used */
 :root {
     --primary-color: 78, 214, 176;
@@ -11,6 +14,11 @@
     --blue: #1aa1e5;
 
     --Poppins: 'Poppins', sans-serif;
+    
+    /* David's own */
+    --background-color-1: linear-gradient(180deg, #D8F4E8 0%, #72A989 33.89%, #D8F4E8 100%);
+    --lora: 'Lora', serif;
+    --inter: 'Inter', sans-serif;
 }
 
 *,
@@ -27,10 +35,13 @@ html {
 }
 
 body {
-    font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
+    max-width: 100%;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 p {
@@ -106,6 +117,66 @@ img {
     padding: 5px;
     border: 1px solid;
     border-radius: 6px;
+}
+
+/* Global */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header a {
+    width: 40%;
+}
+
+.navbar {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #1AA1E5;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.navbar li a:hover {
+    color: #54c4fcf6;
+    font-size: 29px;
+    text-decoration: underline;
+}
+
+}
+.navbar {
+  /* max-width: 100%;
+  margin: 0 auto; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.logo-image{
+    display: flex;
+    align-items:center;
+    
+}
+.img{
+  width: 90%;
 }
 
 /* -------------- */
@@ -418,3 +489,174 @@ footer .bottom a{
 .center-text {
     text-align: center;
 }
+
+/* Homepage */
+
+.link {
+  text-decoration: none;
+  padding: 30px;
+  font-size: 30px;
+  color: #1aa1e5;
+}
+
+:hover.link{
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 20rem;
+}
+
+.arrow-div {
+  padding: 10px;
+}
+
+#icon {
+  width: 6px;
+  height: 2px;
+}
+.learn {
+  font-size: 20px;
+}
+.seam-group {
+  position: relative;
+  padding: 0 7rem;
+}
+.seam {
+  /* max-width: 100%;
+  margin: 0 auto; */
+  font-size: 40px;
+  padding-left: 5rem;
+}
+.btn {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 9rem 5rem;
+}
+.reglog {
+  display: flex;
+  align-items: center;
+  /* padding-left: 2rem; */
+}
+.reglog-link {
+  margin-right: 9rem;
+}
+#reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding-right: 40px;
+  box-shadow: 0px 3px lightgray;
+  border-radius: 8px;
+  height: 2rem;
+  padding: 2px 0;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  background-color: #24a77e;
+}
+:hover#reg {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding: 0 40px;
+  box-shadow: aliceblue;
+  border-radius: 8px;
+  border: 1px solid #36a77e;
+  height: 2rem;
+  padding: 2px 0;
+  color: #36a77e;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+:hover#login {
+  background: #36a77e;
+  opacity: 0.5;
+  color: white;
+  transform: 0.5s;
+}
+.group-image {
+  position: absolute;
+  right: 3rem;
+  top: -3rem;
+}
+.medkollate-image{
+    width: 40rem;
+}
+
+
+/* Register */
+
+.register {
+    background: var(--background-color-1);
+    padding: 80px 107px;
+    height: 100vh;
+    width: 100vw;
+}
+
+.register-section {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.register-section img {
+    width: 878px;
+}
+
+.register-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-section > div h2 {
+    font-family: var(--lora);
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 26px;
+}
+
+.proceed {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    transition: .5s ease-in;
+}
+
+.proceed p {
+    font-family: var(--lora);
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #154C3D;
+    width: 90%;
+}
+
+.proceed i {
+    width: 24px;
+    color: #154C3D;
+}
+
+.proceed:hover {
+    border: 1px solid #154c3d;
+    box-shadow: 0px 0px 2px #000;
+
+}
+
+
