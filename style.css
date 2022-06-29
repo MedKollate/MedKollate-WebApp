@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Roboto&family=K2D&display=swap');
 
 /* This is where i initialize the variables to be used */
 :root {
@@ -19,6 +19,7 @@
     --background-color-1: linear-gradient(180deg, #D8F4E8 0%, #72A989 33.89%, #D8F4E8 100%);
     --lora: 'Lora', serif;
     --inter: 'Inter', sans-serif;
+    --K2D: 'K2D', sans-serif;
 }
 
 *,
@@ -117,6 +118,27 @@ img {
     border-radius: 6px;
 }
 
+.pop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;;
+    background-color: rgba(0, 0, 0, 0.705);
+    z-index: 100;
+    position: fixed;
+}
+
+.popup {
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    z-index: 100;
+    width: 100vw;
+    /* height: 100%; */
+}
+
+.hide {
+    display: none;
+}
 
 /* Homepage */
 .homepage {
@@ -515,6 +537,162 @@ footer .bottom a{
 
 .center-text {
     text-align: center;
+}
+
+/* Service */
+
+#service {
+    background:  linear-gradient(210deg, var(--lightGreen) 31.43%, var(--darkGreen) 100%);;
+    width: 100vw;
+    height: 120vh;
+    margin-bottom: 3rem;
+}
+
+.service--wrapper {
+    max-width: 130rem;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 46px 8px rgba(39, 107, 88, 0.25);
+    border-radius: 30px;
+    padding: 2.8rem 9rem;
+}
+
+.service--wrapper h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 3rem;
+    color: #202020;
+    font-family: var(--K2D);
+}
+
+.service--wrapper p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 178.02%;
+    letter-spacing: 0.03em;
+    color: #202020;
+    padding: 0 2rem;
+}
+
+.services {
+    display: flex;
+    margin: 6rem 0 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services div {
+    border: 2px solid #41BC46;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0px 4px 9px #1AA1E5;
+}
+
+.services div img {
+    width: 190px;
+    height: 140px;
+}
+
+.services div h3 {
+    font-family: var(--lora);
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 46px;
+text-align: center;
+letter-spacing: 0.02em;
+margin-top: 6rem;
+color: #202020;
+}
+
+.service-popup {
+    width: 500px;
+    height: 100%;
+    /* border: 1px solid var(--darkGreen); */
+    padding-bottom: 3rem;
+} 
+
+.service-popup div {
+    background: rgba(255, 255, 255, 0.795);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    height: inherit;
+}
+
+.service-popup div i {
+   font-size: 14px;
+}
+
+.service-popup div h3 {
+    font-family: var(--lora);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #61AC55;
+    margin: 1rem 0 14rem;
+}
+
+.service-popup div p {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 6rem;
+}
+
+.service-popup div a {
+    text-decoration: none;
+    background: #1AA1E5;
+    border-radius: 12px;
+    padding: 10px;
+    width: 199px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.98);
+    text-align: center;
+    margin-left: 27%;
+    transition: 1s;
+}
+
+.service-popup div a:hover {
+    background: linear-gradient(168deg, var(--lightGreen) 31.43%, rgb(251, 251, 251, 0.9604));
+    background-blend-mode: multiply;
+    filter: drop-shadow(1px);
+}
+
+#organize {
+    background: url('./assets/pana.png') no-repeat center;
+    background-size: contain;
+}
+
+#support {
+    background: url('./assets/cuate.png') no-repeat center;
+    background-size: contain;
+}
+
+#available {
+    background: url('./assets/amico.png') no-repeat center;
+    background-size: contain;
+}
+
+#automation {
+    background: url('./assets/earth-and-moon.png') no-repeat center;
+    background-size: contain;
 }
 
 /* Register */
