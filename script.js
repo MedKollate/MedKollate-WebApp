@@ -1,10 +1,12 @@
+// Service page popup
 const pop = document.querySelector('.pop');
 const services = document.querySelector('.services')
 const service_div = document.querySelectorAll('.services div');
 const service_popup = document.querySelectorAll('.service-popup');
 const service_icon = document.querySelectorAll('.service-popup icon');
 
-services.addEventListener('click', popup);
+
+// services.addEventListener('click', popup);
 
 
 function popup() {
@@ -48,3 +50,15 @@ function popup() {
 }
 
 console.log(service_icon)
+
+
+
+// Register Staff Popup 
+const popupID = document.querySelector('.id-popup'); 
+const sumbitID = document.querySelector('.submit-id');
+
+sumbitID.addEventListener('click', popup_id);
+
+function popup_id() {
+    popupID.style = 'dislay: flex;';
+}
