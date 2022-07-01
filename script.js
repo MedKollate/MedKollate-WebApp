@@ -62,3 +62,13 @@ sumbitID.addEventListener('click', popup_id);
 function popup_id() {
     popupID.style = 'dislay: flex;';
 }
+
+
+// Patient Pictiure
+// patientImg = document.querySelector('.pics img');
+// patientImgLink = document.querySelector('.pics input');
+
+// patientImgLink.addEventListener('enter', changeImg() => {
+    
+// }
+
