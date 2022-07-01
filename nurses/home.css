@@ -1,0 +1,72 @@
+body {
+  max-width: 80%;
+  margin: 0 auto;
+  background-color:#43A996;
+  ;
+}
+.nurse-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top:5rem ;
+}
+.profile-section {
+  background-color: #000000;
+  height: 30rem;
+  width: 12rem;
+  border-radius:10px;
+}
+.profile {
+  display: grid;
+  justify-content: center;
+  gap: 10px 0;
+  padding: 20px 0;
+}
+.name{
+    color:white;
+}
+fa-user-circle-o{
+    justify-content: center;
+    align-items:center;
+    padding:0 10px
+}
+.dashboard{
+    display: flex;
+    gap: 0 10px;
+    padding: 10px 12px;
+    
+}
+.dashboard a{
+    text-decoration: none;
+    color:#1AA1E5;
+}
+.logout{
+    display: flex;
+    gap: 0 6px;
+    padding: 10px 12px;
+}
+.logout a{
+    color:red;
+    text-decoration: none;
+    
+}
+:active a{
+color:white;
+}
+.doughnut-chart{
+    background-color:white;
+    width: 24rem;
+    height: 16rem;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.what{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 20rem;
+}
