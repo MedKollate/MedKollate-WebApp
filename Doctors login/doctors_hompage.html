@@ -17,32 +17,40 @@
                 <p>Chief Register</p>
 
                 <ul>
-                    <li>
-                        <i class="fa-solid fa-box"></i>
-                        <a href="#">Dashboard</a>
+                    <li id="dp--active">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        <a href="./doctors_hompage.html">Dashboard</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-user"></i>
-                        <a href="#">Profile</a>
+                        <a href="./doctors_profile.html">Profile</a>
                     </li>
                     <li>
-                        <i class="fa-solid fa-link"></i>
+                        <i class="fa-solid fa-gear"></i>
+                        <a href="./doctors_setting.html">Settings</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clipboard"></i>
                         <a href="#">Patient's Data</a>
                     </li>
                     <li id="logout">
                         <i class="fa-solid fa-arrow-alt-circle-left"></i>
-                        <a href="#">Logout</a>
+                        <a href="./doctors_logout.html">Logout</a>
                     </li>
                 </ul>
             </nav>
 
-            <div>
-                <div>
-                    <h2>Welcome Dr Bello!</h2>
-                    <img src="./images/medkollate logo 3.png" alt="" class="logo">
+            <div class="doctors-dash">
+                <div class="doctors-id">
+                    <div>
+                        <h2>Welcome Dr Bello!</h2>
+                        <p>What would you like to do today?</p>
+                    </div>
+                    
+                    <img src="../images/medkollate logo 3.png" alt="" class="logo">
                 </div>
-                <p>What would you like to do today?</p>
-                <div>
+                
+                <div class="doctors-appoint">
                     <div>
                         <img src="../assets/User.png" alt="Patients">
                         <div>
@@ -67,13 +75,13 @@
                 </div>
 
                 <div>
-                    <div>
-                        <p>Today's Appointments</p>
-                        <div>
+                    <div class="doctors-patients">
+                        <h3>Today's Appointments</h3>
+                        <div class="doctors-time">
                             <p>Patient</p>
                             <p>Time</p>
                         </div>
-                        <div>
+                        <div class="doctors-patient-time">
                             <div>
                                 <img src="../assets/patient-character.png" alt="Patient Image">
                                 <p class="patient-name">A.Z. Adele</p>
@@ -93,13 +101,13 @@
                         <a href="#">See All</a>
                     </div>
 
-                    <div>
-                        <p>Next Patient's Details</p>
-                        <div>
+                    <div class="doctors-patients">
+                        <h3>Next Patient's Details</h3>
+                        <div class="doctors-patient-name">
                             <img src="../assets/patient-character.png" alt="Patient Image">
                             <p class="patient-name">A.Z. Adele</p>
                         </div>
-                        <div>
+                        <div class="doctors-patient-detail">
                             <strong>D.O.B <br><small>5th, Aug 2003</small></strong>
                             <strong>Sex <br><small>Female</small></strong>
                             <strong>Weight <br><small>55kg</small></strong>
@@ -114,7 +122,7 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
    <script src="//code.tidio.co/cqwjwfhowp7ucczh9u90uvpffadbwprx.js" async></script>
 </body>
 </html>
