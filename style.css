@@ -140,7 +140,7 @@ img {
     display: none;
 }
 
-.btn-green, .btn-white, .btn-blue {
+.btn-green, .btn-white, .btn-blue, .btn-trans, .btn-red {
     text-align: center;
     text-decoration: none;
     border: none;
@@ -173,6 +173,20 @@ img {
     color: #fff;
 }
 
+.btn-trans {
+    background: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    color: #092C4C;
+    border: 1px solid #092C4C;
+}
+
+.btn-red {
+    background: rgba(221, 62, 39, 0.9);
+    border-radius: 8;
+    color: #fff;
+}
+
 .btn-green:hover {
     background: linear-gradient(168deg, var(--lightGreen) 31.43%, rgb(251, 251, 251, 0.9604));
     background-blend-mode: multiply;
@@ -190,6 +204,18 @@ img {
     color: #092C4C;
     background: #fff;
     border: 1px solid #092C4C;
+}
+
+.btn-trans:hover {
+    color: #fff;
+    background: #092C4C;
+    border: 1px solid #092C4C;
+}
+
+.btn-red:hover {
+    color: rgba(221, 62, 39, 0.9);
+    background: #fff;
+    border: 1px solid rgba(221, 62, 39, 0.9);
 }
 
 /* -------------- */
@@ -501,7 +527,7 @@ footer .bottom a{
     line-height: 38px;
 }
 
-.about--details button{
+.about--details a{
     text-align: center;
     background: var(--blue);
     color: var(--white);
@@ -514,9 +540,10 @@ footer .bottom a{
     letter-spacing: 0.03em;
     transition: ease-in-out 1s;
     align-self: flex-end;
+    text-decoration: none;
 }
 
-.about--details button:hover{
+.about--details a:hover{
     background: linear-gradient(168deg, var(--lightGreen) 31.43%, rgb(251, 251, 251, 0.9604));
     background-blend-mode: multiply;
     filter: drop-shadow(1px);
@@ -711,7 +738,9 @@ footer .bottom a{
     background-size: contain;
 }
 
+/* ******** */
 /* Register */
+/* ******** */
 
 .register {
     background: var(--background-color-1);
@@ -1066,6 +1095,116 @@ footer .bottom a{
     margin-bottom: 2rem;
 }
 
+/* *********** */
+/* Staff Login */
+/* *********** */
+
+.login-page {
+    padding-bottom: 10rem;
+    padding: 3rem;
+    background: #81E2C7;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login img {
+    max-width: 50%;
+}
+
+.login > div {
+    width: 50%;
+}
+
+.login > div h2 {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #202020;
+    /* margin-bottom: 3rem; */
+}
+
+.no-account, .no-account a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: rgba(32, 32, 32, 0.9);
+    text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.no-account a:hover {
+    color: #1B91CC;
+}
+
+.login-form div {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+}
+
+.login-form div label {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #1B91CC;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.login-form div input {
+    background: rgba(255, 255, 255, 0.98);
+    border: 3px solid #1AA1E5;
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 1rem;
+}
+
+#remember {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#remember label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(17, 107, 153, 0.65);
+    margin-bottom: 0;
+}
+
+#remember a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 42px;
+    letter-spacing: 0.04em;
+    color: rgba(180, 30, 30, 0.9);
+    text-decoration: none;
+}
+
+#sign-in {
+    display: flex;
+}
+
+#sign-in a {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
 /* ************ */
 /* Doctor Pages */
 /* ************ */
@@ -1087,7 +1226,7 @@ footer .bottom a{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    width: 302px;
+    width: 280px;
     height: 747px;
 }
 
@@ -1135,10 +1274,308 @@ footer .bottom a{
     color: #407BFF;
 }
 
+#dp--active {
+    color: #7eccf3;
+    border: 1px solid #7eccf3;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+#dp--active a {
+    color: #7eccf3;
+}
+
 #logout i {
     color: rgba(140, 40, 33, .98);
 }
 
 #logout a {
     color: rgba(140, 40, 33, .98);
+}
+
+.doctors-dash {
+    padding: 0 0 0 6rem;
+    width: 100%;
+}
+
+.doctors-dash > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctors-id > div h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #11242D;
+}
+
+.doctors-id > div p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.98);
+}
+
+.doctors-id > div img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+}
+
+.doctors-appoint {
+    margin-bottom: 4rem;
+}
+
+.doctors-appoint > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200rem;
+    background: #99DDFF;
+    border-radius: 8px;
+    padding: 1.7rem;
+}
+
+.doctors-appoint > div img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100%;
+}
+
+.doctors-appoint > div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.doctors-appoint > div div p {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    color: #202020;
+    text-align: center;
+}
+
+.doctors-appoint > div div h4 {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #202020;
+}
+
+.doctors-patients {
+    width: 360px;
+    height: 445px;
+    background: #D9D9D9;
+    border-radius: 8px;
+    padding: 1.3rem 2rem;
+}
+
+.doctors-patients h3 {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #407BFF;
+}
+
+.doctors-patients a {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #407BFF;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.doctors-patients a:hover {
+    color: red;
+}
+
+.doctors-time  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 3rem;
+}
+.doctors-patient-time div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.doctors-patient-time div img {
+    max-width: 84px;
+    max-height: 84px;
+    border-radius: 100%;
+    border: 2px solid #1AA1E5;
+}
+
+.doctors-patient-time div p {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1AA1E5;
+}
+
+.doctors-patient-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.doctors-patient-name img {
+    max-width: 84px;
+    max-height: 84px;
+    border-radius: 100%;
+    border: 2px solid #1AA1E5;  
+}
+
+.doctors-patient-name p {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #1AA1E5;
+}
+
+.doctors-patient-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.doctors-patient-detail strong {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #202020;
+    text-align: center;
+}
+
+.doctors-patient-detail strong small {
+    font-size: 14px;
+}
+
+.doc-user-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    row-gap: 4rem;
+}
+
+.doc-user-details li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.doc-user-details li h3 {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.98);
+    margin-right: 3rem;
+}
+
+.doc-user-details li p {
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.98);
+}
+
+.doctors-edit {
+    width: 100%;
+}
+
+#doctors-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5rem 0;
+    align-items: center;
+}
+
+#doc-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 18rem 0;
+}
+
+#doc-settings p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.98);
+    margin-bottom: 3rem;
+}
+
+.doc-home {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #092C4C;
+}
+
+#doctors-logout {
+    display: flex;
+    flex-direction: column;
+    padding: 18rem 0;
+}
+
+#doctors-logout h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.98);
+    margin-bottom: 5rem;
 }

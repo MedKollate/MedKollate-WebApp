@@ -49,7 +49,7 @@ function popup() {
     }
 }
 
-console.log(service_icon)
+// console.log(service_icon)
 
 
 
@@ -63,12 +63,11 @@ function popup_id() {
     popupID.style = 'dislay: flex;';
 }
 
+// LOGOUT Popup
+const logout = document .querySelector('#logout');
 
-// Patient Pictiure
-// patientImg = document.querySelector('.pics img');
-// patientImgLink = document.querySelector('.pics input');
+logout.addEventListener('click', logout_id);
 
-// patientImgLink.addEventListener('enter', changeImg() => {
-    
-// }
-
+function logout_id() {
+    popupID.style = 'display: flex;';
+}
