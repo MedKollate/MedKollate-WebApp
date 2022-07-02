@@ -72,9 +72,9 @@ body {
     justify-content: space-between;
     
 }
-.btn div{
-    padding-right: 10rem;
-}
+/* .btn div{
+    padding-right: 15rem;
+} */
 .btn a{
     text-decoration: none;
     
@@ -100,6 +100,9 @@ body {
     color: white;
     font-weight: bold;
 }
+div .save{
+    margin-left: 16rem;
+}
 .save{
     display: flex;
     justify-content: center;
@@ -119,4 +122,5 @@ body {
 }
 .welcome{
     text-align: center;
+    font-size: 24px;
 }
