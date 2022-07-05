@@ -70,3 +70,28 @@ color:white;
 .logo{
     width: 20rem;
 }
+.updated{
+    background-color: white;
+}
+.pink-pointer{
+    background-color: #FDC5BF;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 4px;
+}
+.blue-pointer{
+    background-color: #1AA1E5;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 4px;
+}
+.box{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
