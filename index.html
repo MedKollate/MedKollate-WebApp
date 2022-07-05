@@ -11,52 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="homepage">
 
-    <div class="navbar">
+   <div class="container">
+    <header class="header">
+        <img src="./images/medkollate logo 3.png" alt="" class="logo">
         <nav>
-            <div class="logo-image">
-                <div>
-                    <img src="./images/original_logo.png" alt="logo" class="img">
-            </div>
-
-            <a href="/index.html" class="link">Home</a>
-            <a href="/about.html" class="link">About us</a>
-            <a href="" class="link">Our Services</a>
-            <a href="/contact.html" class="link">Contact Us</a>
-
-
+            <ul class="nav-list">
+                <li><a href="./index.html" class="about--link nav-link  active">Home</a> </li>
+                <li><a href="./about.html" class="about--link nav-link">About Us</a> </li>
+                <li><a href="./service.html" class="about--link nav-link">Our Services</a> </li>
+                <li><a href="./contact.html" class="about--link nav-link">Contact Us</a> </li>
+            </ul>
         </nav>
-    </div>
+    </header>
+
+
     <div class="seam-group">
         <div class="seam">
-            <h3>Seamless, Secure, Fast, Digital <br> Health Recording</h3>
-            <div class="arrow">
-                <div class="arrow-div">
-                    <p class="learn">Learn more </p>
-                </div>
-                <div class="arrow-div">
-                    <i class="fa fa-long-arrow-right" aria-hidden="true" id="icon"></i>
-                </div>
+            <h1>Seamless, Secure, Fast, Digital Health Recording</h1>
+            <div class="arrow-div">
+                <a href="./about.html">Learn more</a>
+                <i class="fa fa-long-arrow-right"></i>
+            </div>
+            <div class="btn">
+                <a href="./register.html" class="btn-green" id="reg">Register</a>
+                <a href="#" class="btn-white" id="login">Login</a>
             </div>
         </div>
-        <div class="btn">
-            <div class="reglog">
-                <!-- <div class="reg-link"> -->
-                <a href="/register.html" class="reglog-link" id="reg">Register</a>
-                <!-- </div> -->
-                <!-- <div class="reg-link" id="login-link"> -->
-                <a href="" class="reglog-link" id="login">Login</a>
-                <!-- </div> -->
-            </div>
-        </div>
+        
         <div class="group-image">
             <img src="./images/group_5.png" alt="group_5_image" class="medkollate-image">
         </div>
     </div>
 
     
+   </div>
     <script src="./script.js"></script>
+   <script src="//code.tidio.co/cqwjwfhowp7ucczh9u90uvpffadbwprx.js" async></script>
 </body>
 
 </html>
