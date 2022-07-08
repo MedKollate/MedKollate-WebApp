@@ -75,10 +75,12 @@
     opacity: 0.5;
 }
 .today{
-    background-color: #0c4377;
+    color: #1AA1E5;
+    font-weight: bolder;
 }
 .days div:hover:not(.today){
     background-color: #092C4C;
     border:1px solid #777777;
     cursor: pointer;
 }
+ 
