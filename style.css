@@ -301,35 +301,79 @@ footer .bottom a{
 }
 
 .seam {
-    width: 60%;
-    position: absolute;
+  /* max-width: 100%;
+  margin: 0 auto; */
+  font-size: 40px;
+  padding-left: 4rem;
 }
-
 
 .seam h1 {
     font-family: var(--lora);
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
+    line-height: 48px;
+
+
+    
     letter-spacing: 0.04em;
-    color: #202020;
-    margin-top: 8rem;
-}
 
-.arrow-div {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 5rem 0 15rem;
-}
-
-.arrow-div a {
-    font-family: var(--lora);
-    margin-right: 1rem;
-    font-size: 2.4rem;
-    text-decoration: none;
     color: #202020;
+}
+.btn {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 9rem 5rem;
+}
+.reglog {
+  display: flex;
+  align-items: center;
+  /* padding-left: 2rem; */
+}
+.reglog-link {
+  margin-right: 9rem;
+}
+#reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding-right: 40px;
+  box-shadow: 0px 3px lightgray;
+  border-radius: 8px;
+  height: 2rem;
+  padding: 2px 0;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  background-color: #24a77e;
+}
+:hover#reg {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding: 0 40px;
+  box-shadow: aliceblue;
+  border-radius: 8px;
+  border: 1px solid #36a77e;
+  height: 2rem;
+  padding: 2px 0;
+  color: #36a77e;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+:hover#login {
+  background: #36a77e;
+  opacity: 0.5;
+  color: white;
+  transform: 0.5s;
 }
 
 .group-image {
