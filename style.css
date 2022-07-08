@@ -304,7 +304,20 @@ footer .bottom a{
   /* max-width: 100%;
   margin: 0 auto; */
   font-size: 40px;
-  padding-left:4 rem;
+  padding-left: 4rem;
+}
+.seam h1 {
+    font-family: var(--lora);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+
+    
+    letter-spacing: 0.04em;
+
+    color: #202020;
 }
 .btn {
   max-width: 100%;
