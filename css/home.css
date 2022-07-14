@@ -1,97 +1,249 @@
 body {
   max-width: 80%;
   margin: 0 auto;
-  background-color:#43A996;
-  ;
+  background-color: #43a996;
 }
 .nurse-container {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
-  margin-top:5rem ;
+  margin-top: 5rem;
 }
 .profile-section {
   background-color: #000000;
   height: 42rem;
   width: 15rem;
-  border-radius:10px;
+  border-radius: 10px;
 }
+
 .profile {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px 0;
   padding: 30px 0;
 }
-.name{
-    color:white;
+
+.name {
+  color: white;
 }
-fa-user-circle-o{
-    justify-content: center;
-    align-items:center;
-    padding:0 10px
+fa-user-circle-o {
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
 }
-.dashboard{
+#dashboard-container {
+  margin-left: 0;
+}
+
+.dashboard {
+  display: flex;
+  align-items: baseline;
+  gap: 0 10px;
+  padding: 24px 12px;
+}
+
+.dashboard a {
+  text-decoration: none;
+  color: #1aa1e5;
+}
+.logout {
+  display: flex;
+  align-items: baseline;
+  gap: 0 6px;
+  padding: 10px 12px;
+}
+.logout a {
+  color: red;
+  text-decoration: none;
+}
+:active a {
+  color: white;
+}
+.doughnut-chart {
+  background-color: white;
+  width: 24rem;
+  height: 16rem;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.what {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 20rem;
+}
+.updated {
+  background-color: white;
+  color: #000000;
+}
+.pink-pointer {
+  background-color: #fdc5bf;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 4px;
+}
+.blue-pointer {
+  background-color: #1aa1e5;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 4px;
+}
+.box {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.material-symbols-outlined {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next-button {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-user {
+  display: none;
+}
+.mobile-nurse-container {
+  display: none;
+}
+today-appointment-container {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(
+      180deg,
+      rgba(192, 210, 210, 0.960784) 0%,
+      rgba(106, 200, 179, 0.960784) 0.01%,
+      rgba(204, 211, 213, 0.960784) 86.72%
+    );
+  }
+  .nurse-container {
+    display: none;
+  }
+  /* .profile-section {
+    background-color: #000000;
+    height: 36rem;
+    width: 21rem;
+    border-radius: 10px;
+  } */
+  .dashboard {
     display: flex;
     gap: 0 10px;
-    padding: 24px 12px;
-    
-}
-.dashboard a{
-    text-decoration: none;
-    color:#1AA1E5;
-}
-.logout{
+    padding: 24px 20px;
+  }
+  .graph-calendar {
+    display: none;
+  }
+  div#dashboard-container {
+    margin-left: 2rem;
+  }
+  /* .dashboard {
+    padding: 12px;
+  } */
+  .med {
+    display: none;
+  }
+  .mobile-nav {
     display: flex;
-    gap: 0 6px;
-    padding: 10px 12px;
-}
-.logout a{
-    color:red;
-    text-decoration: none;
-    
-}
-:active a{
-color:white;
-}
-.doughnut-chart{
-    background-color:white;
-    width: 24rem;
-    height: 16rem;
-}
-.welcome{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-}
-.what{
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-.logo{
-    width: 20rem;
-}
-.updated{
-    background-color: white;
-}
-.pink-pointer{
-    background-color: #FDC5BF;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 4px;
-}
-.blue-pointer{
-    background-color: #1AA1E5;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 4px;
-}
-.box{
-    margin-top: 2rem;
-    display: flex;
+    /* justify-content: center; */
     align-items: center;
-}
-.material-symbols-outlined{
+    gap: 3rem;
+    margin: 2rem 0;
+  }
+  .logo-image {
+    height: 5rem;
+  }
+  .mobile-user {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .mobile-user-image {
+    font-size: 4rem;
+  }
+  .mobile-nurse-container {
+    display: grid;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-profile-section {
+    background-color: #99ddff;
+    height: 9rem;
+    width: 18rem;
+    border-radius: 4px;
+  }
+  .mobile-img {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* align-items: center; */
+    padding: 1.5rem 0;
+  }
+  .mobile-img img {
+    height: 5rem;
+    width: 5rem;
+  }
+  .count {
+    font-weight: bolder;
+  }
+  .today-appointment-container {
+    margin: 6rem 0 3rem 0;
+    background-color: #d9d9d9;
+    height: 21rem;
+    width: 18rem;
+    border-radius: 4px;
+ 
+  }
+  .patients-container {
+    margin: 3rem 0 3rem 0;
+    background-color: #d9d9d9;
+    height: 28rem;
+    width: 18rem;
+    border-radius: 4px;
+ 
+  }
+  .patients{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .male-patient{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .female-patient{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .patient-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0 10px;
+  }
+  .patient-details p{
+    text-align: center;
+  }
 }

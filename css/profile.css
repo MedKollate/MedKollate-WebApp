@@ -124,3 +124,33 @@ div .save{
     text-align: center;
     font-size: 24px;
 }
+.edit-profile-pic{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    body{
+        background: linear-gradient(180deg, #43A996 0%, #000000 100%);
+
+    }
+    .mobile-nav {
+        display: flex;
+        /* row-gap:3rem; */
+        align-items: center;
+        gap: 3rem;
+        margin: 1rem 0;
+      }
+      .logo-image {
+        height: 5rem;
+      }
+    .med-logo{
+        display: none;
+    }
+    .nurse-container{
+        display: none;
+    }
+    .edit-profile-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -11,7 +11,7 @@ var barColors = [
 new Chart("myChart", {
     type: "doughnut",
     data: {
-        labels: xValues,
+        labels:xValues,
         datasets: [{
             backgroundColor: barColors,
             data: yValues

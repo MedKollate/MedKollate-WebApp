@@ -56,6 +56,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding:0.2rem;
+    color:#092C4C;
 }
 .days div{
     background-color: #E5E5E5;
