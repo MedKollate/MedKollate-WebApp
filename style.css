@@ -2153,20 +2153,20 @@ footer .bottom a{
     width: 100%;
     height: 70vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
 
+
+
 .apply {
-    width: 1056px;
-    /* height: 878px; */
     background: linear-gradient(180deg, #6C6C6C 0%, #455A64 100%);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 7rem;
+    padding: 3rem;
 }
 
 .apply h3 {
@@ -2193,7 +2193,8 @@ footer .bottom a{
 
 .apply-form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 10rem 0 8rem;
 }
@@ -2201,6 +2202,7 @@ footer .bottom a{
 .apply-form div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .apply-form div label {
@@ -2218,6 +2220,16 @@ footer .bottom a{
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid #201010;
     border-radius: 6px;
+}
+
+#text_big {
+    padding: 3rem 1rem;
+}
+
+.apply > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .complain {
