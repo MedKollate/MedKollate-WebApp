@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MedKollate || Doctor Dashboard</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body class="doctors">
+    <div class="mobile-nav">
+        <div><img src="/images/menu.png" alt="menu"></div>
+        <div><img src="/images/medkollate logo_5 .png" alt="logo" class="logo-image"></div>
+    </div>
     <div class="container">
         <div class="doc-page">
             <nav>
@@ -46,10 +54,10 @@
                         <h2>Welcome Dr Bello!</h2>
                         <p>What would you like to do today?</p>
                     </div>
-                    
+
                     <img src="../images/medkollate logo 3.png" alt="" class="logo">
                 </div>
-                
+
                 <div class="doctors-appoint">
                     <div>
                         <img src="../assets/User.png" alt="Patients">
@@ -74,7 +82,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="patients">
                     <div class="doctors-patients">
                         <h3>Today's Appointments</h3>
                         <div class="doctors-time">
@@ -98,7 +106,7 @@
                                 <p>11:14</p>
                             </div>
                         </div>
-                        <a href="#">See All</a>
+                        <a href="#" class="see-all">See All</a>
                     </div>
 
                     <div class="doctors-patients">
@@ -108,12 +116,51 @@
                             <p class="patient-name">A.Z. Adele</p>
                         </div>
                         <div class="doctors-patient-detail">
-                            <strong>D.O.B <br><small>5th, Aug 2003</small></strong>
+                            <div>
+                                <strong >
+                                    D.O.B
+                                </strong>
+                                <p style="text-align:left;">5th, Aug 2003</p>
+                            </div>
+                            <div>
+                                <strong>
+                                   Sex
+                                </strong>
+                                <p>Female</p>
+                            </div>
+                            <div>
+                                <strong>
+                                   weight
+                                </strong>
+                                <p>55kg</p>
+                            </div>
+                            <!-- -->
+                            <!-- <strong>D.O.B <br><small>5th, Aug 2003</small></strong>
                             <strong>Sex <br><small>Female</small></strong>
                             <strong>Weight <br><small>55kg</small></strong>
                             <strong>Last Appointment <br><small>4th June 2022</small></strong>
                             <strong>Height <br><small>156m</small></strong>
-                            <strong>Genotype <br><small>AA</small></strong>
+                            <strong>Genotype <br><small>AA</small></strong> -->
+                        </div>
+                        <div class="doctors-patient-detail" style="margin-top:2rem ;">
+                            <div>
+                                <strong>
+                                   Last  <br> Appointment
+                                </strong>
+                                <p>4th June 2022</p>
+                            </div> 
+                            <div>
+                                <strong>
+                                   Height
+                                </strong>
+                                <p>156m</p>
+                            </div> 
+                            <div>
+                                <strong>
+                                   Genotype
+                                </strong>
+                                <p>AA</p>
+                            </div> 
                         </div>
                         <a href="#">Patient's History</a>
                     </div>
@@ -123,6 +170,7 @@
     </div>
 
     <script src="../script.js"></script>
-   <script src="//code.tidio.co/cqwjwfhowp7ucczh9u90uvpffadbwprx.js" async></script>
+    <script src="//code.tidio.co/cqwjwfhowp7ucczh9u90uvpffadbwprx.js" async></script>
 </body>
+
 </html>
