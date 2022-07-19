@@ -22,56 +22,60 @@
         </header>
     
        <section class="registration-form">
-            <form class="form" action="http://localhost/MedKollate API/API/medkollate/api/hospital/create.php">
+            <form class="form" action="http://localhost/MedKollate-API/API/medkollate/api/hospital/create.php">
                 <div>
                     <label for="Name">
                         Name of Hospital
                     </label>
-                    <input type="text" name="Name" placeholder="Input name of hospital here">
+                    <input type="text" id="Name" name="Name" placeholder="Input name of hospital here">
                 </div>
                 <div>
                     <label for="Address">
                         Address of Hospital
                     </label>
-                    <input type="text" name="Address" placeholder="Input address here">
+                    <input type="text" id="Address" name="Address" placeholder="Input address here">
                 </div>
                 <div>
                     <label for="LGA">
                         L G A of Hospital
                     </label>
-                    <input type="text" name="LGA" placeholder="Select LGA">
+                    <input type="text" id="LGA" name="LGA" placeholder="Select LGA">
                 </div>
                 <div>
                     <label for="Location">
                         Location of Hospital
                     </label>
-                    <input type="text" name="Location" placeholder="Select state">
+                    <input type="text" id="Location" name="Location" placeholder="Select state">
                 </div>
                 <div>
                     <label for="Number">
                         Contact Number
                     </label>
-                    <input type="tel" name="Contact_No" placeholder="Input contact number here">
+                    <input type="tel" id="Contact_No" name="Contact_No" placeholder="Input contact number here">
                 </div>
                 <div>
                     <label for="Email">
                         Email Address
                     </label>
-                    <input type="email" name="Email" placeholder="Input email address">
+                    <input type="email" id="Email" name="Email" placeholder="Input email address">
                 </div>
                 <div>
                     <label for="Number">
                     Number of Staff
                     </label>
-                    <input type="number" name="No_of_staff" placeholder="Enter total staff strength here">
+                    <input type="number" id="No_of_staff" name="No_of_staff" placeholder="Enter total staff strength here">
                 </div>
                 <div>
                     <label for="GRN">
                         Government Registration Number
                     </label>
-                    <input type="text" name="CAC_No" placeholder="Enter License Number here">
+                    <input type="text" id="CAC_No" name="CAC_No" placeholder="Enter License Number here" >
                 </div>
-                <input type="submit" value="Submit" class="btn-blue">
+                <div style="margin-top: 4rem;">
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+               
             </form>
        </section>
             

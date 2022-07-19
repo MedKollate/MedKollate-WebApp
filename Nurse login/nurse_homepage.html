@@ -53,56 +53,72 @@
                     <img src="../images/medkollate logo 3.png" alt="" class="logo">
                 </div>
                 
-                <div>
-                    <div id="nurse-chart">
-                        <div id="my-pie-chart">
-                            <div id="patient-type">
-                                <h3> Patient Type</h3>
-                            </div>
+                <div class="doctors-appoint">
+                    <div>
+                        <img src="../assets/User.png" alt="Patients">
+                        <div>
+                            <p>Total Patient seen today</p>
+                            <h4>50+</h4>
                         </div>
-                        <div id="nurse-chart-detail">
-                            <ul>
-                                <li>
-                                    <p>Outpatient</p>
-                                    <p>588</p>
-                                </li>
-                                <li>
-                                    <p>Emergency</p>
-                                    <p>281</p>
-                                </li>
-                                <li>
-                                    <p>Inpatient</p>
-                                    <p>111</p>
-                                </li>
-                                <li>
-                                    <p>Day Surgery</p>
-                                    <p>20</p>
-                                </li>
-                            </ul>
+                    </div>
+                    <div>
+                        <img src="../assets/User.png" alt="Patients">
+                        <div>
+                            <p>Today's Appointment</p>
+                            <h4>100+</h4>
                         </div>
-                   </div>
-    
-                   <div class="patient-type">
-                        <div  id="female">
-                            <div>
-                                <p>56%</p>
-                                <i class="fa-solid fa-venus"></i>
-                            </div>
-                            <p>560</p>
+                    </div>
+                    <div>
+                        <img src="../assets/User.png" alt="Patients">
+                        <div>
+                            <p>Total Appointment</p>
+                            <h4>50+</h4>
                         </div>
-
-                        <div  id="male">
-                            <div>
-                                <p>48%</p>
-                                <i class="fa-solid fa-mars"></i>
-                            </div>
-                            <p>480</p>
-                        </div>
-                   </div>
+                    </div>
                 </div>
+
                 <div>
-                    <div class="vanilla-calendar">
-  
+                    <div class="doctors-patients">
+                        <h3>Today's Appointments</h3>
+                        <div class="doctors-time">
+                            <p>Patient</p>
+                            <p>Time</p>
+                        </div>
+                        <div class="doctors-patient-time">
+                            <div>
+                                <img src="../assets/patient-character.png" alt="Patient Image">
+                                <p class="patient-name">A.Z. Adele</p>
+                                <p>15:30</p>
+                            </div>
+                            <div>
+                                <img src="../assets/patient-character.png" alt="Patient Image">
+                                <p class="patient-name">A.Z. Adele</p>
+                                <p>14:15</p>
+                            </div>
+                            <div>
+                                <img src="../assets/patient-character.png" alt="Patient Image">
+                                <p class="patient-name">A.Z. Adele</p>
+                                <p>11:14</p>
+                            </div>
+                        </div>
+                        <a href="#">See All</a>
+                    </div>
+
+                    <div class="doctors-patients">
+                        <h3>Next Patient's Details</h3>
+                        <div class="doctors-patient-name">
+                            <img src="../assets/patient-character.png" alt="Patient Image">
+                            <p class="patient-name">A.Z. Adele</p>
+                        </div>
+                        <div class="doctors-patient-detail">
+                            <strong>D.O.B <br><small>5th, Aug 2003</small></strong>
+                            <strong>Sex <br><small>Female</small></strong>
+                            <strong>Weight <br><small>55kg</small></strong>
+                            <strong>Last Appointment <br><small>4th June 2022</small></strong>
+                            <strong>Height <br><small>156m</small></strong>
+                            <strong>Genotype <br><small>AA</small></strong>
+                        </div>
+                        <a href="#">Patient's History</a>
                     </div>
                 </div>
             </div>
@@ -111,50 +127,5 @@
 
     <script src="../script.js"></script>
    <script src="//code.tidio.co/cqwjwfhowp7ucczh9u90uvpffadbwprx.js" async></script>
-
-   <!-- Calender Script -->
-   <script src="vanilla-calendar.min.js">
-        const calendar = new VanillaCalendar({
-            HTMLElement: document.querySelector('.vanilla-calendar'),
-            date: new Date('2022-01-01'),
-            settings: {
-                iso8601: false,
-                selecting: false,
-                range: {
-                    min: '2022-05-01',
-                    max: '2022-05-13',
-                    values: ['2022-05-16', '2022-05-17']
-                },
-                selected: {
-                    date: '2022-05-14',
-                    month: 5,
-                    year: 2022,
-                    holidays: ['2022-05-01', '2022-05-02', '2022-05-03', '2022-05-04'],
-                },
-                isibility: {
-                    // hightlights weekends
-                    weekend: true,
-                    // highlights today
-                    today: true,
-                    // shows months
-                    months: false,
-                    // shows years
-                    year: true,
-                    // shows navigation buttons
-                    arrows: {
-                        prev: true,
-                        next: true,
-                    },
-                },
-            },
-        });
-        calendar.name.months.custom = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        calendar.name.week.custom = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        calendar.name.arrow.prev.custom = 'Prev';
-        calendar.name.arrow.next.custom = 'Next';
-        calendar.settings.lang = 'custom';
-        calendar.init();
-   </script>
-
 </body>
 </html>
