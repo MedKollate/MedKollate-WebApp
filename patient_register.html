@@ -27,86 +27,79 @@
             <i class="fa-solid fa-arrow-left"></i>
         </a>
 
-            <form class="form" id="patient-form">
+            <form class="form" id="patient-form" method="post" action="http://localhost/MedKollate-API/API/medkollate/api/patient/create.php">
                 <div>
                     <label for="Name">
-                        First Name
+                        Full Name
                     </label>
-                    <input type="text" placeholder="Enter first name">
-                </div>
+                    <input type="text" name="Name" id="Name" placeholder="Enter full name">
+                </div>  
                 <div>
-                    <label for="Name">
-                        Middle Name
+                    <label for="Sex">
+                        Sex
                     </label>
-                    <input type="text" placeholder="Enter middle name">
-                </div>
+                    <input type="text" name="Sex" id="Sewx" placeholder="Enter Sex">
+                </div>  
                 <div>
-                    <label for="Name">
-                        Last Name
+                    <label for="Education">
+                        Education
                     </label>
-                    <input type="text" placeholder="Enter last name">
-                </div>
+                    <input type="text" name="Education" id="Education" placeholder="Enter full name">
+                </div>  
                 <div>
-                    <label for="Age">
-                        Age
+                    <label for="DOB">
+                        Date of Birth
                     </label>
-                    <input type="number" placeholder="Enter age">
-                </div>
-                <div>
-                    <label for="Number">
-                    Phone number 
-                    </label>
-                    <input type="tel" placeholder="Enter contact">
-                </div>
+                    <input type="date" name="DOB" id="DoOB" placeholder="Enter full name">
+                </div>               
                 <div>
                     <label for="Email">
                         Email Address
                     </label>
-                    <input type="email" placeholder="Example@gmail.com">
+                    <input type="email" name="Email" id="Email" placeholder="Example@gmail.com">
                 </div>
                 <div>
                     <label for="Marital Status">
                         Marital Status
                     </label>
-                    <input type="text" placeholder="Enter Marital status">
+                    <input type="text" name="Marital_status" id="Marital_status" placeholder="Enter Marital status">
                 </div>
                 <div>
                     <label for="Address">
                         Address
                     </label>
-                    <input type="text" placeholder="House number, Street, City, LGA, State">
+                    <input type="text" name="Address" id="Address" placeholder="House number, Street, City, LGA, State">
                 </div>
                 <div>
                     <label for="Occupation">
                         Occupation
                     </label>
-                    <input type="text" placeholder="Enter Occupation">
+                    <input type="text" name="Occupation" id="Occupation" placeholder="Enter Occupation">
                 </div>          
                 <div>
                     <label for="Genotype">
                         Genotype
                     </label>
-                    <input type="text" placeholder="Enter Genotype">
+                    <input type="text" name="Genotype" id="Genotype" placeholder="Enter Genotype">
                 </div>
                 <div>
                     <label for="Allergy">
                         Allergies
                     </label>
-                    <input type="text" placeholder="Enter Allergies">
+                    <input type="text" name="Allergy" id="Allergy" placeholder="Enter Allergies">
                 </div>
                 <div>
                     <label for="Blood group">
                         Blood Group
                     </label>
-                    <input type="text" placeholder="Enter blood group">
+                    <input type="text" name="Blood_Group" id="Blood_Group" placeholder="Enter blood group">
                 </div>
                 <div>
                     <label for="Co-Morbidity">
                         Co-Morbidity
                     </label>
-                    <input type="text" placeholder="Underlying clinical issues">
+                    <input type="text" name="Co_Morbidity" id="Co_Morbidity" placeholder="Underlying clinical issues">
                 </div>
-
                 <div style="margin-top: 4rem;">
                     <button class="submit-btn">Submit</button>
                 </div>
