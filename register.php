@@ -16,10 +16,10 @@
                 <img src="./images/medkollate logo 3.png" alt="" class="logo">
                 <nav>
                     <ul class="nav-list">
-                        <li><a href="./index.html" class="contact--link nav-link">Home</a> </li>
-                        <li><a href="./about.html" class="contact--link nav-link">About Us</a> </li>
-                        <li><a href="#" class="contact--link nav-link">Our Services</a> </li>
-                        <li><a href="./contact.html" class="contact--link nav-link ">Contact Us</a> </li>
+                        <li><a href="./index.php" class="contact--link nav-link">Home</a> </li>
+                        <li><a href="./about.php" class="contact--link nav-link">About Us</a> </li>
+                        <li><a href="./service.php" class="contact--link nav-link">Our Services</a> </li>
+                        <li><a href="./contact.php" class="contact--link nav-link ">Contact Us</a> </li>
                     </ul>
                 </nav>
             </header>
@@ -28,7 +28,7 @@
                 <img src="./assets/people-talking.png" alt="People Talking">
                 <div>
                     <h2>Welcome to MedKollate</h2>
-                    <a href="./healthcare-register.html" class="proceed">
+                    <a href="./healthcare-register.php" class="proceed">
                         <p>Click to proceed</p>
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>

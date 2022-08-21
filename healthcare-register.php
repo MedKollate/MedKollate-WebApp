@@ -22,7 +22,7 @@ session_start();
             <div class="healthcare-reg">
                 <h2>Registration Portal</h2>
             </div>
-            <a href="./index.html">Home</a>
+            <a href="./index.php">Home</a>
         </header>
     
        <section class="registration-form">

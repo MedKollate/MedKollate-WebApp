@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if (isset($_POST['submit'])) {
     $staff_name = $_POST['Name'];
     $Email = $_POST['Email'];

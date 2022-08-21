@@ -16,10 +16,10 @@
                 <img src="./images/medkollate logo 3.png" alt="" class="logo">
                 <nav>
                     <ul class="nav-list">
-                        <li><a href="./index.html" class="contact--link nav-link">Home</a> </li>
+                        <li><a href="./index.php" class="contact--link nav-link">Home</a> </li>
                         <li><a href="./about.html" class="contact--link nav-link">About Us</a> </li>
-                        <li><a href="#" class="contact--link nav-link active">Our Services</a> </li>
-                        <li><a href="./contact.html" class="contact--link nav-link ">Contact Us</a> </li>
+                        <li><a href="./services.php" class="contact--link nav-link active">Our Services</a> </li>
+                        <li><a href="./contact.php" class="contact--link nav-link ">Contact Us</a> </li>
                     </ul>
                 </nav>
             </header>
