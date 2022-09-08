@@ -22,12 +22,12 @@ session_start();
             <div>
                 <h2>Staff Registration Portal</h2>
             </div>
-            <a href="./index.html">Home</a>
+            <a href="./index.php">Home</a>
         </header>
     
        <section class="registration-form">
 
-        <a class="reg-back" href="./register_gap.html">
+        <a class="reg-back" href="./register_gap.php">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
 
@@ -110,7 +110,7 @@ session_start();
                         else if ($_GET['error'] == "none") {
                         ?>
                             <div class="alert alert=danger">
-                                Hospital Registered Successfully
+                                Staff Registered Successfully
                             </div>;
                         <?php
                         }

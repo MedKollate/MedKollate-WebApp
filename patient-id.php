@@ -2,6 +2,7 @@
 session_start();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en"></html>
 
@@ -15,19 +16,19 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="registration staff-reg">
+<body class="registration patient-reg">
     <div class="container">
         <header class="header reg">
             <img src="./images/medkollate logo 3.png" alt="" class="logo">
             <div>
-                <h2>Staff Registration Portal</h2>
+                <h2 id="patient">Patient Registration Portal</h2>
             </div>
-            <a href="./index.php">Home</a>
+            <a href="./index.php" id="patient">Home</a>
         </header>
     
        <section class="registration-form">
 
-        <a class="reg-back" href="./staff-register.php">
+        <a class="reg-back" href="./patient-picture.php">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
 
@@ -36,7 +37,7 @@ session_start();
                     <label for="Emergency contact">
                         Generate ID
                     </label>
-                    <input type="text" placeholder="Number Code" value="<?php echo $_SESSION['staff_id'];?>">
+                    <input type="text" placeholder="Number Code" value="<?php echo $_SESSION['pat_id'];?>">
                 </div>
             </form>
             <div class="id-popup" style="display: none;">
@@ -45,7 +46,7 @@ session_start();
                     <p>You have  successful registered this staff.</p>
                     <i class="fa-solid fa-xmark"></i>
                 </div>
-                <a href="./staff-register.php" class="btn-blue" id="reg">Add</a>
+                <a href="./patient_register.php" class="btn-blue" id="reg">Add</a>
             </div>
        </section>
             

@@ -15,10 +15,10 @@
         <img src="./images/medkollate logo 3.png" alt="" class="logo">
         <nav>
             <ul class="nav-list">
-                <li><a href="./index.html" class="about--link nav-link">Home</a> </li>
-                <li><a href="./about.html" class="about--link nav-link active">About Us</a> </li>
-                <li><a href="./service.html" class="about--link nav-link">Our Services</a> </li>
-                <li><a href="./contact.html" class="about--link nav-link">Contact Us</a> </li>
+                <li><a href="./index.php" class="about--link nav-link">Home</a> </li>
+                <li><a href="./about.php" class="about--link nav-link active">About Us</a> </li>
+                <li><a href="./service.php" class="about--link nav-link">Our Services</a> </li>
+                <li><a href="./contact.php" class="about--link nav-link">Contact Us</a> </li>
             </ul>
         </nav>
     </header>
@@ -32,7 +32,7 @@
                 <p>At MedKollate, we understand the need to optimise processes  and  services and the importance of data security and trust. Which is why we are dedicated to providing an easy to use, secure and budget friendly platform for our clients.</p> 
                 <p>Our goal is to build the largest budget friendly EMR platform that allows hospitals in Africa optimíse service delivery</p>
             </div>
-            <a href="./contact.html" class="btn-blue">Let's Talk</a>
+            <a href="./contact.php" class="btn-blue">Let's Talk</a>
         </div>   
     </div>
     </div>

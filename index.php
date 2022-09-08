@@ -18,10 +18,10 @@
         <img src="./images/medkollate logo 3.png" alt="" class="logo">
         <nav>
             <ul class="nav-list">
-                <li><a href="./index.html" class="about--link nav-link  active">Home</a> </li>
-                <li><a href="./about.html" class="about--link nav-link">About Us</a> </li>
-                <li><a href="./service.html" class="about--link nav-link">Our Services</a> </li>
-                <li><a href="./contact.html" class="about--link nav-link">Contact Us</a> </li>
+                <li><a href="./index.php" class="about--link nav-link  active">Home</a> </li>
+                <li><a href="./about.php" class="about--link nav-link">About Us</a> </li>
+                <li><a href="./service.php" class="about--link nav-link">Our Services</a> </li>
+                <li><a href="./contact.php" class="about--link nav-link">Contact Us</a> </li>
             </ul>
         </nav>
     </header>
@@ -35,8 +35,8 @@
                 <i class="fa fa-long-arrow-right"></i>
             </div>
             <div class="btn">
-                <a href="./register.html" class="btn-green" id="reg">Register</a>
-                <a href="./login_gap.html" class="btn-white" id="login">Login</a>
+                <a href="./register.php" class="btn-green" id="reg">Register</a>
+                <a href="./login_gap.php" class="btn-white" id="login">Login</a>
             </div>
         </div>
         
